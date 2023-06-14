@@ -1,0 +1,8 @@
+4×11 DataFrame
+ Row │ long      lat       group    order  short_name_country  iso2      iso3     iso_name  zone           subzone          share_income
+     │ Float64   Float64   Float64  Int64  String              String3?  String3  String?   String15?      String15?        Float64?
+─────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ -65.4285  43.5614     260.0  15259  Canada              CA        CAN      Canada    North America  North America        0.13938
+   2 │  74.6131  40.2722     430.0  30429  China               CN        CHN      China     Asia           Asia                 2.7678
+   3 │ -60.2417   5.25796    667.0  45666  Guyana              GY        GUY      Guyana    Latin America  South America        0.240533
+   4 │ -87.7618  18.4461     985.0  61077  Mexico              MX        MEX      Mexico    Latin America  Central America      0.559792

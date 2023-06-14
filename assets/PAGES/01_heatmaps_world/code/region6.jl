@@ -1,0 +1,1 @@
+merged_df2 = merged_df[.!(occursin.(r"Antarct", merged_df.short_name_country)),:]

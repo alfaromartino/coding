@@ -1,0 +1,9 @@
+5×2 DataFrame
+ Row │ iso3    share_income
+     │ String  Float64
+─────┼──────────────────────
+   1 │ ABW         0.694218
+   2 │ AFG         0.48446
+   3 │ AGO         0.450032
+   4 │ AIA         0.169835
+   5 │ ALB         0.487509
