@@ -1677,7 +1677,7 @@ h1{
       <div class="col-lg- mx-auto">
         <h2><span style=text-transform:lowercase>1st</span> Step: Handling Our Data in Julia</h2></p>
  <h4> The Packages </h4>
-<p>The following script lists all the packages in Julia and R for plotting heatmaps. Keep in mind that any code written in Julia between <code>R&quot;&quot;&quot;</code> and <code>&quot;&quot;&quot;</code> is interpreted as R code, which is an application of the package <code>RCall</code>.  <span class="footn supr">&#91;note&#93;  <span class="footn_text"> <code>RCall</code> occasionally fails to recognize R&#39;s path when it&#39;s added. If you find an error after running <code>Pkg.add&#40;&quot;RCall&quot;&#41;</code>, try specifying the path to R on your computer and then building the package. Each of these steps are applied on my computer by running <code>ENV&#91;&quot;R_HOME&quot;&#93;&#61;&quot;C:\\Program Files\\R\\R-4.3.0&quot;</code> and <code>Pkg.build&#40;&quot;RCall&quot;&#41;</code>.  </span></span> </p>
+<p>The following script lists all the packages in Julia and R for plotting heatmaps. Keep in mind that any code written in Julia between <code>R&quot;&quot;&quot;</code> and <code>&quot;&quot;&quot;</code> is interpreted as R code, which is an application of the package <code>RCall</code>.  <span class="footn supr">&#91;note&#93;  <span class="footn_text"> <code>RCall</code> occasionally fails to recognize R&#39;s path after installing it. If this occurs, try specifying the path to R on your computer and then building the package. Each of these steps on my computer by running <code>ENV&#91;&quot;R_HOME&quot;&#93;&#61;&quot;C:\\Program Files\\R\\R-4.3.0&quot;</code> and <code>Pkg.build&#40;&quot;RCall&quot;&#41;</code>.  </span></span> </p>
  <div class=" code_box"> <details  open><summary> Loading Packages  </summary> <div class="code_inline"><div class="code_NoFormat"><pre><code class="language-julia">using DataFrames, RCall, CSV, Downloads
 
 R&quot;&quot;&quot;
@@ -2634,17 +2634,17 @@ document.onkeydown = function(evt) {
 <style>
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
      .franklin-content,.jumbotron, .left_bar{
         font-size:80% ;}
 
       h1 {font-size: 180%; padding-top:1.5em;padding-bottom:0.5em;}
 
-      .jumbotron{padding-top: 0; margin-top:0; padding-bottom:3em;  
+      .jumbotron{padding-top: 0; margin-top:0; padding-bottom:4em;  
         padding-left: 100px !important;
         padding-right: 3% !important;}
         
-      h2, .lead {font-size: 110%;padding-top: 0.5em;}
+      h2, .lead {font-size: 110%;padding-top: 1.5em;}
 
      .bar_top, nav, .copy-button, .left_bar .personal_website, .py-1 .container .center-text, .left_subtitle{
       visibility:hidden; width:0 !important; height:0 !important}  
@@ -2659,12 +2659,11 @@ document.onkeydown = function(evt) {
         font-size:100%;
         padding-left:1%;
         padding-right:1%;
+        margin:1%;
       }
 
-      .index_container .itemNoSpace ul{
-        padding-left:1%;
-        padding-right:1%;        
-        margin:1%;
+      .itemNoSpace ul, section {
+        padding:1% !important;
       }
       
 
@@ -2690,13 +2689,10 @@ document.onkeydown = function(evt) {
                  
       .left_bar ul, .left_bar ul li, .left_bar ul li a { padding:0 !important; height:2.8em;}
       
-      
-      
-
       .left_bar img, .left_bar ul li a img{
       width:0% !important; height:0% !important; visibility: hidden;}  
-    
-      
 }
+
+
 
 </style>
