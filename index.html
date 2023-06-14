@@ -1880,17 +1880,17 @@ window.onkeydown = function(event) {
 <style>
 
 
-@media (max-width: 900px) {
+@media (max-width: 850px), (max-height: 600px)  {
      .franklin-content,.jumbotron, .left_bar{
         font-size:80% ;}
 
-      h1 {font-size: 180%; padding-top:1.5em;padding-bottom:0.5em;}
+        h1 {font-size: 180%; padding-top:1.5em;padding-bottom:1.5em;}
+  
+  .jumbotron{padding-top: 0; margin-top:0; padding-bottom:4em;  
+    padding-left: 100px !important;
+    padding-right: 3% !important;} 
 
-      .jumbotron{padding-top: 0; margin-top:0; padding-bottom:4em;  
-        padding-left: 100px !important;
-        padding-right: 3% !important;}
-        
-      h2, .lead {font-size: 110%;padding-top: 1.5em;}
+  h2, .lead {font-size: 110%;padding-top: 0em;}
 
      .bar_top, nav, .copy-button, .left_bar .personal_website, .py-1 .container .center-text, .left_subtitle{
       visibility:hidden; width:0 !important; height:0 !important}  
@@ -1904,16 +1904,13 @@ window.onkeydown = function(event) {
       .index_container{
         font-size:100%;
         padding-left:1%;
-        padding-right:1%;
-        margin:1%;
+        padding-right:1%;        
       }
 
       .itemNoSpace ul, section {
         padding:1% !important;
       }
       
-
-        
       
         .franklin-content{
          padding-left: 0 !important;}
@@ -1939,6 +1936,8 @@ window.onkeydown = function(event) {
       width:0% !important; height:0% !important; visibility: hidden;}  
 }
 
-
+@media (max-width: 850px)  {
+  .left_bar ul, .left_bar ul li, .left_bar ul li a { padding:0 !important; height:3.2em; font-size:96%}
+}
 
 </style>
