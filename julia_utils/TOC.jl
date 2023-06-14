@@ -92,6 +92,10 @@ assets_folder(PAGEfile) = "/assets/$(subfolder)/$(PAGEfile)"
 dftoc.path_assets       = replace.(dftoc.name, r".md$" => "") |> #we remove .md 
                           x -> assets_folder.(x)
 
+#=assets_folder(PAGEfile) = "$(path_prepath)/assets/$(subfolder)/$(PAGEfile)"
+dftoc.web_assets        = replace.(dftoc.name, r".md$" => "") |> #we remove .md
+                          x -> assets_folder.(x)=#
+
 let dftoc = dftoc
     assets_folder(PAGEfile) = "/assets/$(subfolder)/$(PAGEfile)"
     html_tree               = "https://github.com/alfaromartino/$(path_prepath)/tree/main/"
