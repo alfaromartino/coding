@@ -1773,7 +1773,7 @@ ggsave&#40;filename &#61; file.path&#40;&#36;&#40;graphs_folder&#41;,&quot;file_
 <p>The <code>fill</code> option constitutes the only information you need to fill in if you use this code as a template. It indicates the variable to be plotted, which is <code>share_income</code> in our case. The rest of the code should remain the same, regardless of what you wish to plot. In particular, <code>aes&#40;x&#61;long, y &#61; lat, group &#61; group&#41;</code> must be specified in the same way every time you use it, as it provides the necessary information for drawing a world map. </p>
 <p>And that&#39;s it&#33; You can use the code snippet as a template for your own graphs. The resulting graph is shown below. </p>
  <div class=" " style="text-align: left; background-color:   !important"> <details  closed><summary> Plotted Graph  </summary>
-    <p style="background-color:  "> <img style="width: 50%;height:auto;" src="  /assets/PAGES/01_heatmaps_world/graphs/file_graph0.svg"/>
+    <p style="background-color:  "><img src="/coding/assets/PAGES/01_heatmaps_world/graphs/file_graph0.svg" style="width: 50%; height:auto;">
     </p></details></div>
 <p>As the baseline graph may not be visually appealing, we next provide further options to enhance its appearance. The final code we&#39;ll provide can also be used as a template that can be &quot;copied and pasted&quot;, similar to the baseline script. </p>
 <p>      </div>
@@ -1798,7 +1798,7 @@ our_gg &lt;- ggplot&#40;&#41; &#43; geom_polygon&#40;data &#61; &#36;&#40;merged
 #saving the graph
 ggsave&#40;filename &#61; file.path&#40;&#36;&#40;graphs_folder&#41;,&quot;file_graph01a.svg&quot;&#41;, plot &#61; our_gg&#41;
 &quot;&quot;&quot;</code></pre> </div> </div>  </details></div>  <div class=" " style="text-align: left; background-color:   !important"> <details  closed><summary> Plotted Graph  </summary>
-    <p style="background-color:  "> <img style="width: 50%;height:auto;" src="  /assets/PAGES/01_heatmaps_world/graphs/file_graph01a.svg"/>
+    <p style="background-color:  "><img src="/coding/assets/PAGES/01_heatmaps_world/graphs/file_graph01a.svg" style="width: 50%; height:auto;">
     </p></details></div> <br/></p>
  <h4> Getting Rid of Axes, Grids, and Background </h4>
 <p>We first define the following function using <code>RCall</code>:  <div class=" code_box"> <details  closed><summary> Code  </summary> <div class="code_inline"><div class="code_NoFormat"><pre><code class="language-julia">R&quot;&quot;&quot;
@@ -1830,7 +1830,7 @@ our_gg &lt;- our_gg &#43; user_theme&#40;&#41;
 #saving the graph
 ggsave&#40;filename &#61; file.path&#40;&#36;&#40;graphs_folder&#41;,&quot;file_graph01b.svg&quot;&#41;, plot &#61; our_gg&#41;
 &quot;&quot;&quot;</code></pre> </div> </div>  </details></div>  <div class=" " style="text-align: left; background-color:   !important"> <details  closed><summary> Plotted Graph  </summary>
-    <p style="background-color:  "> <img style="width: 50%;height:auto;" src="  /assets/PAGES/01_heatmaps_world/graphs/file_graph01b.svg"/>
+    <p style="background-color:  "><img src="/coding/assets/PAGES/01_heatmaps_world/graphs/file_graph01b.svg" style="width: 50%; height:auto;">
     </p></details></div> <br/></p>
  <h4> Changing Aspect Ratio </h4>
 <p> <div class=" code_box"> <details  closed><summary> Code  </summary> <div class="code_inline"><div class="code_NoFormat"><pre><code class="language-julia">R&quot;&quot;&quot;
@@ -1844,7 +1844,7 @@ our_gg &lt;- our_gg &#43; coord_fixed&#40;1.3&#41;
 #saving the graph
 ggsave&#40;filename &#61; file.path&#40;&#36;&#40;graphs_folder&#41;,&quot;file_graph01c.svg&quot;&#41;, plot &#61; our_gg&#41;
 &quot;&quot;&quot;</code></pre> </div> </div>  </details></div>  <div class=" " style="text-align: left; background-color:   !important"> <details  closed><summary> Plotted Graph  </summary>
-    <p style="background-color:  "> <img style="width: 50%;height:auto;" src="  /assets/PAGES/01_heatmaps_world/graphs/file_graph01c.svg"/>
+    <p style="background-color:  "><img src="/coding/assets/PAGES/01_heatmaps_world/graphs/file_graph01c.svg" style="width: 50%; height:auto;">
     </p></details></div> <br/></p>
  <h4> Changing Color Scale </h4>
 <p>A quirky feature of <code>ggplot2</code> is that  <em> lighter colors</em> are associated with  <em> higher values</em>. The following code inverts the color scale, so that  <em> darker colors</em> correspond to  <em> higher values</em>.</p>
@@ -1866,7 +1866,7 @@ our_gg &lt;- our_gg &#43; theme&#40;
 #saving the graph
 ggsave&#40;filename &#61; file.path&#40;&#36;&#40;graphs_folder&#41;,&quot;file_graph01d.svg&quot;&#41;, plot &#61; our_gg&#41;
 &quot;&quot;&quot;</code></pre> </div> </div>  </details></div>  <div class=" " style="text-align: left; background-color:   !important"> <details  closed><summary> Plotted Graph  </summary>
-    <p style="background-color:  "> <img style="width: 50%;height:auto;" src="  /assets/PAGES/01_heatmaps_world/graphs/file_graph01d.svg"/>
+    <p style="background-color:  "><img src="/coding/assets/PAGES/01_heatmaps_world/graphs/file_graph01d.svg" style="width: 50%; height:auto;">
     </p></details></div> <br/></p>
  <h4> Changing Color of Borders </h4>
 <p> <div class=" code_box"> <details  closed><summary> Code  </summary> <div class="code_inline"><div class="code_NoFormat"><pre><code class="language-julia">R&quot;&quot;&quot;
@@ -1878,7 +1878,7 @@ our_gg &lt;- ggplot&#40;&#41; &#43; geom_polygon&#40;data &#61; &#36;&#40;merged
 #saving the graph
 ggsave&#40;filename &#61; file.path&#40;&#36;&#40;graphs_folder&#41;,&quot;file_graph01e.svg&quot;&#41;, plot &#61; our_gg&#41;
 &quot;&quot;&quot;</code></pre> </div> </div>  </details></div>  <div class=" " style="text-align: left; background-color:   !important"> <details  closed><summary> Plotted Graph  </summary>
-    <p style="background-color:  "> <img style="width: 50%;height:auto;" src="  /assets/PAGES/01_heatmaps_world/graphs/file_graph01e.svg"/>
+    <p style="background-color:  "><img src="/coding/assets/PAGES/01_heatmaps_world/graphs/file_graph01e.svg" style="width: 50%; height:auto;">
     </p></details></div> <br/></p>
  <h4> Cropping the Graph </h4>
 <p> <div class=" code_box"> <details  closed><summary> Code  </summary> <div class="code_inline"><div class="code_NoFormat"><pre><code class="language-julia">R&quot;&quot;&quot;
@@ -1890,7 +1890,7 @@ our_gg &lt;- ggplot&#40;&#41; &#43; geom_polygon&#40;data &#61; &#36;&#40;merged
 height &lt;- 5
 ggsave&#40;filename &#61; file.path&#40;&#36;&#40;graphs_folder&#41;,&quot;file_graph01f.svg&quot;&#41;, plot &#61; our_gg, width &#61; height * 3, height &#61; height&#41;
 &quot;&quot;&quot;</code></pre> </div> </div>  </details></div>  <div class=" " style="text-align: left; background-color:   !important"> <details  closed><summary> Plotted Graph  </summary>
-    <p style="background-color:  "> <img style="width: 50%;height:auto;" src="  /assets/PAGES/01_heatmaps_world/graphs/file_graph01f.svg"/>
+    <p style="background-color:  "><img src="/coding/assets/PAGES/01_heatmaps_world/graphs/file_graph01f.svg" style="width: 50%; height:auto;">
     </p></details></div> <br/></p>
 <p>      </div>
     </div>
@@ -1948,7 +1948,7 @@ our_gg &lt;- our_gg &#43; theme&#40;
 height &lt;- 5
 ggsave&#40;filename &#61; file.path&#40;&#36;&#40;graphs_folder&#41;,&quot;file_graph01.svg&quot;&#41;, plot &#61; our_gg, width &#61; height * 3, height &#61; height&#41;
 &quot;&quot;&quot;</code></pre> </div> </div>  </details></div>  <div class=" " style="text-align: left; background-color:   !important"> <details  closed><summary> Plotted Graph  </summary>
-    <p style="background-color:  "> <img style="width: 50%;height:auto;" src="  /assets/PAGES/01_heatmaps_world/graphs/file_graph01.svg"/>
+    <p style="background-color:  "><img src="/coding/assets/PAGES/01_heatmaps_world/graphs/file_graph01.svg" style="width: 50%; height:auto;">
     </p></details></div></p>
 <p>      </div>
     </div>
